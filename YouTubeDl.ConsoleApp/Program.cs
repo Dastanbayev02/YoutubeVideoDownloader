@@ -16,6 +16,5 @@ if (videoLink.IsCorrectYouTubeLink())
     Console.WriteLine(await Youtube.DownloadVideo(videoLink, @$"{path}") ? "\nSuccesfully downloaded!!!\n" 
                                 : "\nThis video already downloaded!\n");
 }
-
 else
     Console.WriteLine("Incorrect link!!!");
